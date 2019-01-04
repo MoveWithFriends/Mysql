@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `timeslot`, `Interest`, `customer`
 ;
 
-CREATE TABLE `Customer` (
+CREATE TABLE `users` (
   CustomerID      INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   FirstName       VARCHAR(255) NOT NULL,
   LastName        VARCHAR(255) NOT NULL,
@@ -10,6 +10,7 @@ CREATE TABLE `Customer` (
   Phonenumber     VARCHAR(20) NOT NULL,
   Gender			    VARCHAR(6) NOT NULL,
   BirthDate       DATE NOT NULL,
+  password        VARCHAR(255) NOT NULL,       
   Preferredgender VARCHAR(10) NOT NULL)
   
 ;
